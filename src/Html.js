@@ -8,7 +8,7 @@ const Html = (props) => {
   return (
 
 
-    <Row className="mt-2">
+    <Row>
     <Col xs={12} md={12}>
 
     <div className="container survey-wrapper el-S">
