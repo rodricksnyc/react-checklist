@@ -57,10 +57,6 @@ class App extends React.Component {
 
     <Container>
 
-
-
-
-
     <Row className="mt-5">
     <Col xs={12} md={9}>
 
@@ -124,7 +120,7 @@ class App extends React.Component {
         <Accordion.Header>HEAD</Accordion.Header>
         <Accordion.Body>
             <Head />
-            <TooltipButton />
+
         </Accordion.Body>
       </Accordion.Item>
 

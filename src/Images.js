@@ -18,7 +18,7 @@ const Images = (props) => {
 
     <fieldset>
     <legend>
-    IMAGES
+
     </legend>
 
 
