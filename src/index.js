@@ -5,6 +5,7 @@ import React, { useRef, useState } from "react";
 import { Accordion, AccordionButton, AccordionCollapse, AccordionContext, Alert, Anchor, Badge, Breadcrumb, BreadcrumbItem, Button, ButtonGroup, ButtonToolbar, Card, CardGroup, CardImg, Carousel, CarouselItem, CloseButton, Col, Collapse, Container, Dropdown, DropdownButton, Fade, Figure, FloatingLabel, Form, FormCheck, FormControl, FormFloating, FormGroup, FormLabel, FormSelect, FormText, Image, InputGroup, ListGroup, ListGroupItem, Modal, ModalBody, ModalDialog, ModalFooter, ModalHeader, ModalTitle, Nav, NavDropdown, NavItem, NavLink, Navbar, NavbarBrand, Offcanvas, OffcanvasBody, OffcanvasHeader, OffcanvasTitle, Overlay, OverlayTrigger, PageItem, Pagination, Placeholder, PlaceholderButton, Popover, PopoverBody, PopoverHeader, ProgressBar, Ratio, Row, SSRProvider, Spinner, SplitButton, Stack, Tab, TabContainer, TabContent, TabPane, Table, Tabs, ThemeProvider, Toast, ToastBody, ToastContainer, ToastHeader, ToggleButton, ToggleButtonGroup, Tooltip} from 'react-bootstrap';
 
 
+
 import RadioButton from "./RadioButton";
 import Field from "./Field";
 import Head from "./Head";
@@ -22,6 +23,8 @@ import WEO from "./WEO";
 import Open from "./Open";
 
 import TooltipButton from "./TooltipButton";
+import ToTopButton from "./ToTopButton";
+import Accordions from "./Accordions";
 
 import "./styles.css";
 
@@ -55,7 +58,10 @@ class App extends React.Component {
 
     <Form>
 
-    <Container>
+    <Container fluid className="addMargin">
+
+
+
 
     <Row className="mt-5">
     <Col xs={12} md={9}>
@@ -112,119 +118,25 @@ class App extends React.Component {
 
 
     <Tabs>
-    <Tab eventKey={1} title="GENERIC">
+    <Tab eventKey={1} title="GENERIC" value="Generic">
 
-
-    <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>HEAD</Accordion.Header>
-        <Accordion.Body>
-            <Head />
-
-        </Accordion.Body>
-      </Accordion.Item>
-
-
-
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>HTML</Accordion.Header>
-        <Accordion.Body>
-        <Html />
-        </Accordion.Body>
-      </Accordion.Item>
-
-      <Accordion.Item eventKey="2">
-        <Accordion.Header>CSS</Accordion.Header>
-        <Accordion.Body>
-            <Css />
-        </Accordion.Body>
-      </Accordion.Item>
-
-
-
-    <Accordion.Item eventKey="3">
-      <Accordion.Header>NAVIGATION</Accordion.Header>
-      <Accordion.Body>
-            <Navigation />
-      </Accordion.Body>
-    </Accordion.Item>
-
-
-    <Accordion.Item eventKey="4">
-      <Accordion.Header>IMAGES</Accordion.Header>
-      <Accordion.Body>
-              <Images />
-      </Accordion.Body>
-    </Accordion.Item>
-
-    <Accordion.Item eventKey="5">
-      <Accordion.Header>COPY</Accordion.Header>
-      <Accordion.Body>
-              <Copy />
-      </Accordion.Body>
-    </Accordion.Item>
-
-    <Accordion.Item eventKey="6">
-      <Accordion.Header>ACCESSIBILITY</Accordion.Header>
-      <Accordion.Body>
-            <Accessibility />
-      </Accordion.Body>
-    </Accordion.Item>
-
-    <Accordion.Item eventKey="7">
-      <Accordion.Header>USER EXPERIENCE</Accordion.Header>
-      <Accordion.Body>
-          <UserExperience />
-      </Accordion.Body>
-    </Accordion.Item>
-
-    <Accordion.Item eventKey="8">
-      <Accordion.Header>TECHNICAL</Accordion.Header>
-      <Accordion.Body>
-              <Technical />
-      </Accordion.Body>
-    </Accordion.Item>
-
-    <Accordion.Item eventKey="9">
-      <Accordion.Header>TEAM SPECIFIC: MULTICHANNEL EXCELLENCE</Accordion.Header>
-      <Accordion.Body>
-                  <MultichannelExcellence />
-      </Accordion.Body>
-    </Accordion.Item>
-
-    <Accordion.Item eventKey="10">
-      <Accordion.Header>TEAM SPECIFIC: MEASUREMENT</Accordion.Header>
-      <Accordion.Body>
-
-            <Measurement />
-      </Accordion.Body>
-    </Accordion.Item>
-
-    <Accordion.Item eventKey="11">
-      <Accordion.Header>TEAM SPECIFIC: WEO</Accordion.Header>
-      <Accordion.Body>
-
-              <WEO />
-      </Accordion.Body>
-    </Accordion.Item>
-
-
-
-  </Accordion>
+    <Accordions />
 
 
     </Tab>
-    <Tab eventKey={2} title="SYNGENTA">Tab 2 content</Tab>
+    <Tab eventKey={2} title="SYNGENTA" value="Syngenta">
 
-    <Tab eventKey={3} title="WORDPRESS">Tab 4 content is displayed by default</Tab>
-    <Tab eventKey={4} title="MARKETING CLOUD">Tab 5 content</Tab>
+      <Accordions />
+
+    </Tab>
+
+    <Tab eventKey={3} title="WORDPRESS" value="Wordpress">
+    <Accordions />
+    </Tab>
+    <Tab eventKey={4} title="MARKETING CLOUD" value="MC">
+      <Accordions />
+    </Tab>
     </Tabs>
-
-
-
-
-
-
 
 
     </Container>
@@ -238,13 +150,20 @@ class App extends React.Component {
     </div>
 
 
+
+
+
     </ Container>
 
 
 
+  <ToTopButton />
+
 
 
     </div>
+
+
 
 
   )}

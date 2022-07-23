@@ -18,7 +18,8 @@ const target = useRef(null);
                   {props.text}
                   </Tooltip>}
                 >
-                <i aria-hidden="true" className="fal fa-question-circle ml-2" ref={target} onClick={() => setShow(!show)}></i>
+                <i aria-hidden="true" className="fal fa-question-circle ml-2" ref={target} 
+                onClick={() => setShow(!show)}></i>
             </OverlayTrigger>
         );
 

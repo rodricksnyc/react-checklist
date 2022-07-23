@@ -18,7 +18,7 @@ const Copy = (props) => {
 
     <fieldset>
     <legend>
-    COPY
+
     </legend>
 
 

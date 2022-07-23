@@ -18,7 +18,7 @@ const MultichannelExcellence = (props) => {
 
     <fieldset>
     <legend>
-    TEAM SPECIFIC: MULTICHANNEL EXCELLENCE
+
     </legend>
 
 

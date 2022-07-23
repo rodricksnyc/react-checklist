@@ -18,7 +18,7 @@ const Navigation = (props) => {
 
     <fieldset>
     <legend>
-      NAVIGATION
+
     </legend>
 
 

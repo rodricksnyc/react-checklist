@@ -14,7 +14,7 @@ import Overlay from 'react-bootstrap/Overlay';
        <Overlay target={target.current} show={show} placement="right" data-html="true">
 
          {({ placement, arrowProps, show: _show, popper, text, ...props }) => (
-           <div
+           <div className="tool"
              {...props}
              style={{
                position: 'absolute',
@@ -29,7 +29,7 @@ import Overlay from 'react-bootstrap/Overlay';
 
            >
             <div dangerouslySetInnerHTML={{__html:copy.title}} />
-            <p>{copy.text}</p>
+            <span>{copy.text}</span>
 
            </div>
          )}

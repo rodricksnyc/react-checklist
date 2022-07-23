@@ -18,7 +18,7 @@ const Measurement = (props) => {
 
     <fieldset>
     <legend>
-    TEAM SPECIFIC: MEASUREMENT
+
     </legend>
 
 

@@ -18,7 +18,7 @@ const UserExperience = (props) => {
 
     <fieldset>
     <legend>
-    USER EXPERIENCE
+  
     </legend>
 
 

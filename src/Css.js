@@ -18,7 +18,7 @@ const Css = (props) => {
 
     <fieldset>
     <legend>
-    CSS
+
     </legend>
 
 

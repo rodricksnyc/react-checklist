@@ -18,7 +18,7 @@ const WEO = (props) => {
 
     <fieldset>
     <legend>
-      TEAM SPECIFIC: WEO
+
     </legend>
 
 

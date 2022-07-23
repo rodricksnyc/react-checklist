@@ -18,7 +18,7 @@ const Accessibility = (props) => {
 
     <fieldset>
     <legend>
-    ACCESSIBILITY
+
     </legend>
 
 

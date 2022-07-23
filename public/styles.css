@@ -7,6 +7,11 @@ html{
   overflow-x: hidden;
 }
 
+.addMargin{
+  width:85%;
+  margin:0 auto
+}
+
 
 i span{
   font-family: 'Open Sans', sans-serif;
@@ -187,12 +192,12 @@ label.togglePassword {
 
 }
 
-.tooltip a{
+.tool a{
   color:black;
   text-decoration: underline;
 }
 
-.tooltip a:hover{
+.tool  a:hover{
   color:black;
   text-decoration: underline;
 
@@ -252,7 +257,8 @@ label.togglePassword {
 }
 
 .accordion-body{
-  padding-top:0
+  padding-top:0;
+  padding: 0;
 }
 
 .accordion-button:not(.collapsed){
@@ -1525,16 +1531,15 @@ button:focus{
 
 
 
-
 .back-to-top {
   position: fixed;
   right: 1.25rem;
   bottom: 9rem;
   z-index: 77;
-  background: #89477d;
-  color: white;
-  height: 2.5rem;
-  width: 2.5rem;
+  background: #BCF8F1;
+  color: black;
+  height: 3rem;
+  width: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1546,6 +1551,7 @@ button:focus{
 }
 .back-to-top:hover i, .back-to-top:focus i {
   animation: toTop 0.6s ease-in-out 0s infinite alternate;
+  cursor: pointer;
 }
 
 .back-to-top i {

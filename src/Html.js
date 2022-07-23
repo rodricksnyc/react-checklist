@@ -17,7 +17,7 @@ const Html = (props) => {
 
     <fieldset>
     <legend>
-    HTML
+
     </legend>
 
 

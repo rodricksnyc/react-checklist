@@ -18,7 +18,7 @@ const Technical = (props) => {
 
     <fieldset>
     <legend>
-    TECHNICAL
+  
     </legend>
 
 
